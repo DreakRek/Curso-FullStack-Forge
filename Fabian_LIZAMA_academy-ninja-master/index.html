@@ -1,0 +1,41 @@
+<html>
+<body>
+    <div id='background'>
+        <div id='character' style='position:absolute; top:100px; left:450px; width:59px; height:86px;'></div>
+    </div>
+    <script type="text/javascript">
+        var leftValue = 450, topValue = 100;
+        var direction = "down";
+        var animationCount = 1;
+        //Order
+        function update() {
+            var characterElement = document.getElementById("character");
+            characterElement.style.left = leftValue + "px";
+            characterElement.style.top = topValue + "px";
+            characterElement.style.backgroundImage = 'url("img/' + direction + animationCount + '.png")';
+        }
+        //Key Press
+        document.onkeydown = function(e) {
+            console.log(e);
+            if (e.keyCode == 37) { // LEFT
+                leftValue = Math.max(0, leftValue - 10);
+                direction = "left";
+            } else if (e.keyCode == 39) { // RIGHT
+                leftValue = Math.min(500, leftValue + 10);
+                direction = "right";
+            } else if (e.keyCode == 40) { // DOWN
+                topValue = Math.min(500, topValue + 10);
+                direction = "down";
+            } else if (e.keyCode == 38) { // UP
+                topValue = Math.max(0, topValue - 10);
+                direction = "top";
+            }
+            animationCount = (animationCount === 1) ? 2 : 1;
+            update();
+        }
+        window.onload = function() {
+            update();
+        };
+    </script>
+</body>
+</html>

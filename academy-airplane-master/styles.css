@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.game-container {
+  position: relative;
+  width: 400px;
+  height: 630px;
+  background-color: #753838;
+  overflow: hidden;
+  border: 5px solid #fff; /* Cambia el color del borde según tus preferencias */
+}
+
+#player {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  border-radius: 50%;
+  bottom: 20px;
+  left: 175px; /* Inicia en el centro del cuadrado */
+  transform: translateX(-50%);
+  z-index: 2; /* Asegura que el jugador esté por encima del enemigo */
+}
+
+#enemy {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+  top: 20px;
+  left: 175px; /* Inicia en el centro del cuadrado */
+  transform: translateX(-50%);
+}

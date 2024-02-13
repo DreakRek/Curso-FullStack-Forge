@@ -1,0 +1,78 @@
+/* styles.css */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222; /* Fondo oscuro para resaltar el mapa */
+}
+
+#game-container {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 1px;
+    border: 5px solid #000; /* Bordes más gruesos para el mapa */
+    background-color: #222; /* Fondo oscuro para resaltar el mapa */
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd; /* Color de fondo más claro para las celdas */
+    border: 1px solid #ccc;
+}
+
+.sushi {
+    background-image: url('img/sushi.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+.ninja {
+    background-image: url('img/ninja.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    transform: scaleX(-1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.ninja.rotate-up {
+    transform: rotate(-90deg);
+}
+
+.ninja.rotate-down {
+    transform: rotate(90deg);
+}
+
+.ninja.rotate-left {
+    transform: scaleX(-1) rotate(0deg);
+}
+
+.ninja.rotate-right {
+    transform: rotate(0deg);
+}
+
+.wall {
+    background-color: #3d3d3d;
+}
+
+/* Configuración específica para algunas celdas de pared */
+.wall.cell-1, .wall.cell-2, .wall.cell-3, .wall.cell-4, .wall.cell-5, .wall.cell-6,
+.wall.cell-8, .wall.cell-9, .wall.cell-10, .wall.cell-11, .wall.cell-18, .wall.cell-21,
+.wall.cell-22, .wall.cell-23, .wall.cell-25, .wall.cell-26, .wall.cell-28, .wall.cell-29,
+.wall.cell-31, .wall.cell-32, .wall.cell-34, .wall.cell-35, .wall.cell-37, .wall.cell-38,
+.wall.cell-39, .wall.cell-41, .wall.cell-42, .wall.cell-43, .wall.cell-45, .wall.cell-46,
+.wall.cell-48, .wall.cell-49, .wall.cell-50, .wall.cell-51, .wall.cell-58, .wall.cell-61,
+.wall.cell-62, .wall.cell-63, .wall.cell-65, .wall.cell-66, .wall.cell-68, .wall.cell-69,
+.wall.cell-71, .wall.cell-72, .wall.cell-74, .wall.cell-75, .wall.cell-77, .wall.cell-78,
+.wall.cell-79, .wall.cell-81, .wall.cell-82, .wall.cell-83, .wall.cell-85, .wall.cell-86,
+.wall.cell-88, .wall.cell-89, .wall.cell-90, .wall.cell-91, .wall.cell-98 {
+    background-color: #333;
+}

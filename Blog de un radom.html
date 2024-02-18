@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Fake (como la tv)</title>
+    <meta name="description" content="xd.">
+</head>
+<body>
+
+    <header>
+        <h1>Dreak</h1>
+        <img src="dreak.png" alt="img" style="width: 100px;">
+    </header>
+
+    <div id="destinos">
+        <h2>Programador Señor Pawno / Lua / MySql</h2>
+        <p>Lider de Programacion y Desarrollo visual en.</p>
+        <ul>
+            <li>Dixel Roleplay</li>
+            <li>Golden State</li>
+            <li>Fivem</li>
+        </ul>
+    </div>
+
+    <div id="experiencias">
+        <h2>Desarrollo y producion</h2>
+        <p>Contenido Agregado.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre completo</th>
+                    <th>Pepe el magico</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Renovar visualmente la Web</td>
+                    <td>Nueva forma de gestion personal</td>
+                </tr>
+                <tr>
+                    <td>Mejorar FireWall de la Web</td>
+                    <td>Nuevo perfil visual</td>
+                </tr>
+                <tr>
+                    <td>Mejorar el Maketing</td>
+                    <td>Nuevo metodo de busqueda perfil</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="consejos">
+        <h2>Consejos de Programacion</h2>
+        <p>Los mejores tips.</p>
+        <ul>
+            <li>Documentar todo.</li>
+            <li>Comentar todo el codigo.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <h3>¡Suscribete para recibir nuevas actualizaciones!</h3>
+        
+        <form action="/encuesta_ficticia" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <div>
+            <label for="programacion">Programacion Favorito:</label>
+            <select id="programacion" name="programacion" required>
+                <option value="pawno">Pawno</option>
+                <option value="java">Java</option>
+            </select>
+            </div>
+            <label>¿Te gustaría recibir anuncion especiales para ti?</label>
+            <div>
+                <input type="checkbox" id="email" name="email"> Sí, quiero recibir anuncios.
+            </div>
+            <div>
+            <label>Género:</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Femenino</label>
+            </div>
+            <input type="submit" value="Suscribirse">
+        </form>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    background-color: red;
+    margin: auto;
+    margin-top: 30px;
+    width: 970px;
+    height: 1100px;
+}
+
+.header{
+    background-color: #f8f8f8;
+    padding: 10px;
+    height: 4%;
+}
+
+.header h1{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    display: inline-block;
+    margin-right: 37%;
+}
+
+.header h2{
+    display: inline-block;
+    margin: auto;
+}
+
+.main-content{
+    background-image: radial-gradient(#6f5964, #1d0d11);
+    height: 85%;
+    padding: 20px;
+}
+
+.bio {
+    height: 30%;
+}
+
+.bio .photo-of-me{
+    display: inline-block;
+    border: #f8f8f8 5px solid;
+    width: 40%;
+    height: auto;
+}
+
+.bio .about-self{
+    display: inline-block;
+    width: 55%;
+    height: auto;
+    vertical-align: top;   
+    margin-left: 20px; 
+}
+
+.wrapper h3 {
+    color: #fefcf8;
+    background-image: linear-gradient(to bottom, #b1b1b5, #878593, #b1b1b5);
+    padding: 10px;
+}
+
+.wrapper h4 {
+    color: #fefcf8;
+    background-image: linear-gradient(to bottom, #b1b1b5, #878593, #b1b1b5);
+    padding: 10px;
+}
+
+.content-container{
+    color: black;
+    background-image: linear-gradient(to right, #fefefe, #dacbd9);
+    display: inline-block;
+}
+
+.projects .content-container{
+    width: 32%;
+    min-height: 100%;
+}
+
+.family-contacts{
+    margin: 0px 12px 0px 12px;
+}
+
+.projects p{
+    min-height: 200px;
+}
+
+.projects img{
+    width: 100%;
+}
+
+.technologies img{
+    width: 37px;
+    height: auto;
+    margin: 7px;
+}
+
+p {
+    padding: 10px;
+    text-align: justify;
+}
+
+.about-self a{
+    padding: 10px;
+    color: black;
+    display: block;
+}
+
+.link-button{
+    display: block;
+    color: #fefefe;
+    text-decoration: none;
+    background-color: #407d61;
+    width: fit-content;
+    height: 20px;
+    margin: 10px auto 20px auto;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2), 0 10px 10px 0 rgba(0,0,0,0.19);  
+}
+
+.footer{
+    min-height: 6%;
+    background-color: #fefefe;
+    display: inline-block;
+    width: 100%;
+}
+
+.footer .email{
+    display: block;
+    padding: 7px;
+    text-align: center;
+}
+
+.footer .socials{
+    display: block;
+    margin: auto;
+    height: auto;
+    width: fit-content;
+}
+
+.footer img{
+    height: 20px;
+    width: 20px;
+    vertical-align: bottom;
+}
+
+.footer ul{
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+.footer ul li{
+    display: inline-block;
+    height: auto;
+}

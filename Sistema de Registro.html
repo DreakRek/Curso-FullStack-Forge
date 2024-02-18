@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+
+<body>
+    <h1>Sistema de Registro</h1>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <br>
+
+    <label for="contrasena">Contraseña:</label>
+    <input type="password" id="contrasena" name="contrasena" required>
+
+    <br>
+
+    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+    <br>
+
+    <label>Género:</label>
+    <input type="radio" id="masculino" name="genero" value="masculino">
+    <label for="masculino">Masculino</label>
+    <input type="radio" id="femenino" name="genero" value="femenino">
+    <label for="femenino">Femenino</label>
+
+    <br>
+
+    <label for="comentarios">Comentarios:</label>
+    <div>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+    </div>
+
+    <br>
+
+    <label for="pais">País:</label>
+    <select id="pais" name="pais">
+        <option value="chile">Chile</option>
+        <option value="china">China</option>
+        <option value="rusia">Rusia</option>
+    </select>
+
+    <br>
+
+    <br>
+    <label for="lenguaje">Lenguaje Favorito:</label>
+    <select id="lenguaje" name="lenguaje">
+        <option value="pawno">Pawno</option>
+        <option value="js">JavaScript</option>
+        <option value="python">Ptyhon</option>
+    </select>
+
+    <br>
+    
+    <div>
+        <input type="submit" value="Registrar">
+    </div>
+
+</body>
+
+</html>

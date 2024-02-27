@@ -5,24 +5,20 @@
 }
 
 #wrapper {
-    width: 1000px;
+    width: 100%;
     margin: 10px;
     background-color: silver;
-    margin: 0 auto;
 }
 
 #header {
-    margin: 10px;
     min-height: 150px;
     background-color: green;
 }
 
 #navigation {
     min-height: 300px;
-    width: 250px;
-    margin: 10px;
+    width: 100%;
     background-color: blue;
-    float: left;
 }
 
 #main_content {
@@ -30,22 +26,52 @@
     flex-wrap: wrap;
     min-height: 400px;
     background-color: red;
-    flex-grow: 1;
     margin: 10px;
-    margin-left: 10px;
 }
 
 .subcontents {
     min-height: 200px;
-    width: 220px;
+    width: 100%;
     background-color: yellow;
     margin: 10px;
 }
 
 #advertisement {
     min-height: 120px;
-    width: 660px;
+    width: 100%;
     margin: 10px;
     background-color: purple;
     clear: both;
+}
+
+/* Media queries */
+@media screen and (min-width: 481px) {
+    #navigation {
+        width: 250px;
+        float: left;
+    }
+
+    .subcontents {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #wrapper {
+        width: 1000px;
+        margin: 10px auto;
+    }
+
+    .subcontents {
+        width: calc(33.33% - 20px);
+    }
+}
+
+/* Ocultar la caja azul en pantallas pequeñas y medianas */
+@media screen and (max-width: 1024px) {
+    #navigation {
+        width: 100%;
+        float: none;
+        display: none;
+    }
 }

@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #245076;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+main {
+    flex: 1;
+    margin-left: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#logo {
+    max-width: 100px;
+}
+
+#search-bar {
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    background-color: #444444;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px; 
+}
+
+nav {
+    text-align: center;
+    background-color: #407bad;  
+    color: white;
+    padding: 5px;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px; 
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px; 
+}
+
+nav a:hover {
+    background-color: #214b6e; 
+}
+
+
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:white; 
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.section-section {
+    border-top: 3px solid hsl(208.16deg 53.85% 64.31%); 
+    height: 300px;
+    margin: 0 2rem;
+    text-align: center;
+}
+
+.sidebar {
+    width: 20%;
+    padding: 10px;
+}
+
+.sidebar h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.main-flex{
+    display: flex;
+}
+.ul-style{
+    text-align: center;
+    color: white;
+    list-style: unset;
+}
+.ul-style a{
+    color: white;
+    
+}
+.ul-style li{
+    margin: 10px;
+}
+.text-yellow{
+    color: yellow;
+}
+.button-style{
+    margin: 10px;
+    height: 30px;
+    align-items: center;
+    color:white;
+    background-color: #214b6e;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+.search-text{
+    text-align: center;
+}
+.section-link{
+    color: hsl(208.06deg 53.45% 77.25%);
+}
+footer {
+    background-color: #306998; 
+    color: white;
+    padding: 20px;
+}
+
+.footer-section {
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-divider {
+    border: 1px solid white;
+    height: 1px;
+    height: 50px; 
+    margin: 0 20px;
+}
+.footer-down{
+    justify-content: center;
+    text-align: center;
+    color: hsl(208.13deg 57.14% 67.06%);
+    margin: 10px;
+}
+.footer-section{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.center-h5-main{
+    font-size: 15px;
+    color: #eec935;
+    text-align: center;
+}
+.center-h5-main-ex{
+    color: white;
+    text-align: center;
+}
+.main-text-center{
+    width: 100%;
+}
